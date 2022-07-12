@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import moment from 'moment';
 import { Add, Close, Edit, MoreVertical, Trash } from 'grommet-icons';
 import { useParams } from 'react-router-dom';
 
@@ -198,6 +199,8 @@ function Project() {
               {project.project_name}
             </h1>
             <p className="Parraf-Text text-muted">
+              Created at {moment(project.created_at).format('LL')}
+              <span className="ml-10 mr-10">-</span>
               {parseFloat(completePercentage).toFixed(0)}% completed
             </p>
           </div>
