@@ -1,0 +1,61 @@
+.Modal {
+    @at-root #{&}-Wrapper {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba($color: #001a2c, $alpha: 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        z-index: 500;
+        position: absolute;
+        animation: animateOverlay 300ms ease-in-out;
+    }
+
+    @at-root #{&}-Content {
+        padding: 15px 20px 20px 20px;
+        border-radius: $border_radius * 2;
+        box-shadow: $box_shadow;
+        background-color: $white;
+        animation: animateModal 300ms ease-in-out;
+    }
+
+    @at-root #{&}-Tabs {
+        width: 100%;
+        height: 35px;
+        display: flex;
+    }
+
+    @at-root #{&}-Tab {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        border-bottom: 2px solid $light_color_20;
+        cursor: pointer;
+        transition: 0.1s all ease-in-out;
+
+        &.Modal-Tab__Active {
+            border-color: $primary_color;
+        }
+    }
+}
+
+@keyframes animateModal {
+    from {
+        transform: translateY(-30px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes animateOverlay {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

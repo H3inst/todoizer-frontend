@@ -1,0 +1,42 @@
+.bg-primary {
+    background-color: $primary_color !important;
+}
+.bg-primary_light {
+    background-color: $primary_color_light !important;
+}
+.bg-light {
+    background-color: $light_color_10;
+}
+
+.text-primary {
+    color: $primary_color !important;
+}
+
+.text-muted {
+    color: rgba($color: #000000, $alpha: 0.5);
+}
+
+.text-white {
+    color: $white !important;
+}
+
+.text-black {
+    color: $black !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.fw-bolder {
+    font-weight: $font_weight_black;
+}
+.fw-bold {
+    font-weight: $font_weight_bold;
+}
+.display-1 {
+    font-size: 5rem;
+}
+.display-3 {
+    font-size: 2.5rem;
+}

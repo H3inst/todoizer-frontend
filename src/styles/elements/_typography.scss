@@ -1,0 +1,15 @@
+.Title-Text {
+    font-size: $font_size_large;
+    font-weight: $font_weight_bold;
+}
+
+.Parraf-Text {
+    font-size: $font_size_normal;
+}
+
+.Link-Text {
+    @extend .Parraf-Text;
+    text-decoration: none;
+    color: $primary_color;
+    cursor: pointer;
+}

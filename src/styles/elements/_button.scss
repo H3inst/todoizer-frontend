@@ -1,0 +1,53 @@
+.Button {
+    padding: 8px 14px;
+    background-color: $primary_color_light;
+    color: $primary_color;
+    font-weight: $font_weight_semibold;
+    font-size: $font_size_normal;
+    border: 0;
+    outline: 0;
+    user-select: none;
+    white-space: nowrap;
+    border-radius: $border_radius;
+    cursor: pointer;
+
+    @at-root #{&}__Primary {
+        background-color: $primary_color;
+        color: $white;
+    }
+
+    @at-root #{&}__Lg {
+        padding: 10px 16px;
+    }
+}
+
+.IconButton {
+    border: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: transparent;
+    user-select: none;
+    cursor: pointer;
+    white-space: nowrap;
+    outline: 0;
+
+    svg {
+        width: 15px;
+    }
+
+    &:hover {
+        background-color: $light_color_20;
+    }
+
+    @at-root #{&}-White {
+        color: $white;
+        
+        &:hover {
+            background-color: rgba($color: $white, $alpha: 0.1);
+        }
+    }
+}

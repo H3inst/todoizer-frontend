@@ -1,0 +1,25 @@
+// Colors
+$primary_color: #004e8c;
+$primary_color_light: rgba($primary_color, 0.1);
+
+$light_color_10: #F4F5F7;
+$light_color_20: #eee;
+$light_color_30: rgba(#000, 0.15);
+
+$white: #FFF;
+$black: #000;
+
+// Border
+$border_radius: 0.25rem;
+
+// Box shadow
+$box_shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 13%),
+0 0.3px 0.9px 0 rgb(0 0 0 / 11%);
+
+$font_size_normal: 1.4rem;
+$font_size_large: 2rem;
+
+$font_weight_normal: 400;
+$font_weight_semibold: 600;
+$font_weight_bold: 700;
+$font_weight_black: 900;

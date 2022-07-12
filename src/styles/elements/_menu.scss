@@ -1,0 +1,45 @@
+.Dropdown {
+    position: relative;
+    display: inline-block;
+
+    @at-root #{&}-Menu {
+        display: flex;
+        visibility: hidden;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        right: 15px;
+        background-color: $light_color_10;
+        border-radius: $border_radius;
+        border: 1px solid $light_color_30;
+        padding: 5px 0;
+        min-width: 200px;
+        z-index: 1;
+        user-select: none;
+        transform: scale(0);
+        transform-origin: top right;
+        transition: 0.2s all ease;
+        white-space: nowrap;
+        box-shadow: $box_shadow;
+        
+        @at-root #{&}__Item {
+            @extend .Parraf-Text;
+            display: flex;
+            align-items: center;
+            padding: 6px 10px;
+            border-radius: $border_radius;
+            text-decoration: none;
+            cursor: pointer;
+            color: #666;
+
+            &:hover {
+                background-color: $primary_color_light;
+            }
+        }
+    }
+}
+
+.Show-Menu {
+    visibility: visible;
+    transform: scale(100%);
+}
