@@ -26,7 +26,7 @@ These are some features which the app is working on at this moment.
 - Delete todo.
 - Project accomplishment percent.
 
-Currently, the project is not working with teams, it is development right now. Comming soon.
+Currently, the project is not working with teams, it is development right now. Coming soon.
 
 ### Technologies used with this project
 - React.js
