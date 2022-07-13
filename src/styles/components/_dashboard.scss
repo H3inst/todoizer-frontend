@@ -3,6 +3,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: $light_color_10;
 }
 
 .Dashboard-Page {
@@ -12,7 +13,7 @@
 }
 
 .Dashboard-Topbar {
-    width: 100%;
+    margin: 15px;
     height: 40px;
     background-color: $primary_color;
     display: flex;
@@ -20,16 +21,21 @@
     justify-content: space-between;
     padding: 0 20px;
     color: $white;
+    border-radius: 50px;
+    box-shadow: $box_shadow;
 }
 
 .Dashboard-Sidepanel {
     width: 300px;
     height: 100%;
     overflow-y: auto;
-    background-color: $light_color_10;
+    background-color: $white;
+    padding-top: 10px;
     transition: 0.3s all ease;
     white-space: nowrap;
     overflow-x: hidden;
+    border-radius: 15px;
+    box-shadow: $box_shadow;
 
     &.Dashboard-Sidepanel__Closed {
         width: 20px;
