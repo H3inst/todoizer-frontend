@@ -6,13 +6,25 @@ function Loader() {
   const loaderId = document.getElementById('loader');
   const isLoading = useSelector(state => state.interface.isLoading);
 
-  console.log(isLoading);
   const render = () => {
     return (
       <Fragment>
         {isLoading && (
           <div className="Loader-Wrapper">
-            <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            <div className="lds-spinner">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
           </div>
         )}
       </Fragment>

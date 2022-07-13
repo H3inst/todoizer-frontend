@@ -65,7 +65,7 @@ function Sidepanel({ projects = [], teams = [] }) {
 
   const render = () => {
     return (
-      <div style={{ position: 'relative' }}>
+      <div style={{ position: 'relative', margin: '0px 15px 15px 15px' }}>
         <div
           className="Dashboard-Sidepanel__Close-Button"
           onClick={handleToggleSidepanel}>
