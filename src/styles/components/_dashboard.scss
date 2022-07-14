@@ -64,6 +64,8 @@
         color: $black;
 
         &.Item-Active {
+            color: $primary_color;
+            font-weight: $font_weight_semibold;
             background-color: $primary_color_light;
         }
     }
