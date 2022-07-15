@@ -22,7 +22,6 @@
     padding: 0 20px;
     color: $white;
     border-radius: 50px;
-    box-shadow: $box_shadow;
 }
 
 .Dashboard-Sidepanel {
@@ -35,7 +34,6 @@
     white-space: nowrap;
     overflow-x: hidden;
     border-radius: 15px;
-    box-shadow: $box_shadow;
 
     &.Dashboard-Sidepanel__Closed {
         width: 20px;
