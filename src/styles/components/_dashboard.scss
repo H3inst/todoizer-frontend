@@ -13,7 +13,6 @@
 }
 
 .Dashboard-Topbar {
-    margin: 15px;
     height: 40px;
     background-color: $primary_color;
     display: flex;
@@ -21,7 +20,6 @@
     justify-content: space-between;
     padding: 0 20px;
     color: $white;
-    border-radius: 50px;
 }
 
 .Dashboard-Sidepanel {
@@ -33,7 +31,6 @@
     transition: 0.3s all ease;
     white-space: nowrap;
     overflow-x: hidden;
-    border-radius: 15px;
 
     &.Dashboard-Sidepanel__Closed {
         width: 20px;
