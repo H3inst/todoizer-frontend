@@ -26,7 +26,7 @@ function EmptyState() {
   const render = () => {
     return (
       <div className="flex-1 flex flex-column justify-center align-center">
-        <img src={EmptySvg} alt="Empty" className="Image" width={400} />
+        <img src={EmptySvg} alt="Empty" className="Image" width={350} />
         <h1 className="mt-20">
           Start with Todoizer now
         </h1>
