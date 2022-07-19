@@ -31,6 +31,7 @@
     transition: 0.3s all ease;
     white-space: nowrap;
     overflow-x: hidden;
+    box-shadow: $box_shadow;
 
     &.Dashboard-Sidepanel__Closed {
         width: 20px;
