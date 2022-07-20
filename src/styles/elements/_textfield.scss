@@ -16,15 +16,15 @@
     border: 2px solid transparent;
     padding-left: 10px;
     min-width: 0;
-    
+
     &:focus-within {
         border-bottom-color: $primary_color;
     }
-    
+
     >svg {
         width: 18px;
     }
-    
+
     >input {
         font-size: $font_size_normal;
         border: 0;
@@ -32,6 +32,8 @@
         flex: 1;
         outline: 0;
         padding: 8px 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 
