@@ -29,7 +29,7 @@ function Sidepanel({ projects = [], teams = [] }) {
 
   const handleToggleSidepanel = () => {
     setIsSidepanelOpen(prevState => !prevState);
-  }
+  };
 
   const renderProjects = () => {
     return projects.map((project) => (
@@ -41,8 +41,13 @@ function Sidepanel({ projects = [], teams = [] }) {
           projectId: project.project_id
         })}
       >
-        <p className="Parraf-Text project-name">{project.project_name}</p>
-        <p className="Parraf-Text ml-10 text-muted">{project.total_count_todos}</p>
+        <div className="circle mr-10" style={{ background: project.project_color || "#AAA" }}></div>
+        <p className="Parraf-Text project-name flex-1">
+          {project.project_name}
+        </p>
+        <p className="Parraf-Text ml-10 text-muted">
+          {project.total_count_todos}
+        </p>
       </NavLink>
     ));
   };

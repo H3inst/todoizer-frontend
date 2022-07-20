@@ -113,7 +113,7 @@ function Project() {
             onClick={handleOpenEditProjectModal}
           >
             <Edit size="15" className="mr-20" />
-            Change project name
+            Edit project
           </div>
           <div
             className="Dropdown-Menu__Item"
@@ -209,7 +209,11 @@ function Project() {
         {renderTodos()}
         <EditProjectModal
           isOpen={editProjectModal}
-          data={{ projectId, projectName: project.project_name }}
+          data={{
+            projectId,
+            projectName: project.project_name,
+            projectColor: project.project_color || ""
+          }}
           onClose={handleCloseEditProjectModal}
           width={400}
         />

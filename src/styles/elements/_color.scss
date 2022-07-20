@@ -1,0 +1,12 @@
+.Input-Color__Wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $light_color_20;
+    border-radius: $border_radius;
+    border: 2px solid transparent;
+    min-width: 0;
+    padding: 3px 5px;
+    color: #777;
+    cursor: pointer;
+}
