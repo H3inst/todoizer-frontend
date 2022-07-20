@@ -17,8 +17,8 @@ function Team() {
   const team = useSelector(state => state.team.team);
 
   const [openMenu, setOpenMenu] = useState(false);
-  const [editTeamModal, setEditTeamModal] = useState(false);
-  const [deleteTeamModal, setDeleteTeamModal] = useState(false);
+  // const [editTeamModal, setEditTeamModal] = useState(false);
+  // const [deleteTeamModal, setDeleteTeamModal] = useState(false);
 
   useEffect(() => {
     dispatch(getTeamByIAction(teamId));
