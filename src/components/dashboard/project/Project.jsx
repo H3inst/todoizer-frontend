@@ -113,7 +113,7 @@ function Project() {
             onClick={handleOpenEditProjectModal}
           >
             <Edit size="15" className="mr-20" />
-            Change project name
+            Edit project
           </div>
           <div
             className="Dropdown-Menu__Item"

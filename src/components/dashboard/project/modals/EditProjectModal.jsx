@@ -33,7 +33,7 @@ function EditProjectModal({ isOpen, onClose, data, width }) {
     event.preventDefault();
     dispatch(editProjectAction(data.projectId, {
       project_name: projectName,
-      project_color: selectedColor
+      project_color: selectedColor || "#AAAAAA"
     }));
     onClose();
   };
