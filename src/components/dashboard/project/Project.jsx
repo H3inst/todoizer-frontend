@@ -156,14 +156,14 @@ function Project() {
                 id={`todo_status_${index}`}
                 name={`todo_status_${index}`}
                 onChange={(e) => handleOnChangeTodoStatus(e, todo)}
-                autoComplete={false}
+                autoComplete="off"
               />
               <input
                 className="Textfield-No-Bg pl-10"
                 type="text"
                 defaultValue={todo.todo_description}
                 onBlur={(e) => handleOnChangeTodoDescription(e, todo)}
-                autoComplete={false}
+                autoComplete="off"
                 style={{
                   textDecoration:
                     todo.todo_status === TODO_STATUS.done

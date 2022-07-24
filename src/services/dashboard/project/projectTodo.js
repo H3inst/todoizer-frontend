@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { API } from '../../../constants/constants';
 import { buildUrl, setHeaders } from '../../../utils/utils';
 
 /**
@@ -7,7 +8,7 @@ import { buildUrl, setHeaders } from '../../../utils/utils';
  * @returns 
  */
 export async function getAllTodosService(projectId) {
-  const absoluteUrl = buildUrl(`/dashboard/project/${projectId}/todo`);
+  const absoluteUrl = buildUrl(`/${API.dashboard}/${API.project}/${projectId}/${API.todo}`);
   const headers = setHeaders();
   const axiosParams = {
     headers
@@ -24,7 +25,7 @@ export async function getAllTodosService(projectId) {
  * @returns 
  */
 export async function createTodoService(projectId, payload) {
-  const absoluteUrl = buildUrl(`/dashboard/project/${projectId}/todo`);
+  const absoluteUrl = buildUrl(`/${API.dashboard}/${API.project}/${projectId}/${API.todo}`);
   const headers = setHeaders();
   const axiosParams = {
     headers
@@ -42,7 +43,7 @@ export async function createTodoService(projectId, payload) {
  * @returns 
  */
 export async function editTodoService(projectId, todo_id, payload) {
-  const absoluteUrl = buildUrl(`/dashboard/project/${projectId}/todo/${todo_id}`);
+  const absoluteUrl = buildUrl(`/${API.dashboard}/${API.project}/${projectId}/${API.todo}/${todo_id}`);
   const headers = setHeaders();
   const axiosParams = {
     headers
@@ -59,7 +60,7 @@ export async function editTodoService(projectId, todo_id, payload) {
  * @returns 
  */
 export async function deleteTodoService(projectId, todoId) {
-  const absoluteUrl = buildUrl(`/dashboard/project/${projectId}/todo/${todoId}`);
+  const absoluteUrl = buildUrl(`/${API.dashboard}/${API.project}/${projectId}/${API.todo}/${todoId}`);
   const headers = setHeaders();
   const axiosParams = {
     headers

@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { API } from '../constants/constants';
 import { buildUrl, setHeaders } from '../utils/utils';
 
 /**
@@ -7,7 +8,7 @@ import { buildUrl, setHeaders } from '../utils/utils';
  * @returns 
  */
 export async function registerUserService(user) {
-  const absoluteUrl = buildUrl('/access/register');
+  const absoluteUrl = buildUrl(`/${API.access}/register`);
   const { data: serviceData } = await axios.post(absoluteUrl, user);
 
   return serviceData;
@@ -19,7 +20,7 @@ export async function registerUserService(user) {
  * @returns 
  */
 export async function loginUserService(user) {
-  const absoluteUrl = buildUrl('/access');
+  const absoluteUrl = buildUrl(`/${API.access}`);
   const { data: serviceData } = await axios.post(absoluteUrl, user);
 
   return serviceData;
@@ -30,7 +31,7 @@ export async function loginUserService(user) {
  * @returns 
  */
 export async function checkTokenService() {
-  const absoluteUrl = buildUrl('/access');
+  const absoluteUrl = buildUrl(`/${API.access}`);
   const headers = setHeaders();
   const axiosParams = { headers };
 

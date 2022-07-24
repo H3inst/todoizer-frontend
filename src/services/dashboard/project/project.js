@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { API } from '../../../constants/constants';
 import { buildUrl, setHeaders } from '../../../utils/utils';
 
 /**
@@ -6,7 +7,7 @@ import { buildUrl, setHeaders } from '../../../utils/utils';
  * @returns 
  */
 export async function getAllProjectsService() {
-  const absoluteUrl = buildUrl('/dashboard/projects');
+  const absoluteUrl = buildUrl(`/${API.dashboard}/${API.projects}`);
   const headers = setHeaders();
   const axiosParams = {
     headers
@@ -22,7 +23,7 @@ export async function getAllProjectsService() {
  * @returns 
  */
 export async function getProjectByIdService(project_id) {
-  const absoluteUrl = buildUrl(`/dashboard/projects/${project_id}`);
+  const absoluteUrl = buildUrl(`/${API.dashboard}/${API.projects}/${project_id}`);
   const headers = setHeaders();
   const axiosParams = {
     headers
@@ -38,7 +39,7 @@ export async function getProjectByIdService(project_id) {
  * @returns 
  */
 export async function createProjectService(payload) {
-  const absoluteUrl = buildUrl('/dashboard/projects');
+  const absoluteUrl = buildUrl(`/${API.dashboard}/${API.projects}`);
   const headers = setHeaders();
   const axiosParams = {
     headers
@@ -55,7 +56,7 @@ export async function createProjectService(payload) {
  * @returns 
  */
 export async function editProjectService(projectId, payload) {
-  const absoluteUrl = buildUrl(`/dashboard/projects/${projectId}`);
+  const absoluteUrl = buildUrl(`/${API.dashboard}/${API.projects}/${projectId}`);
   const headers = setHeaders();
   const axiosParams = {
     headers
@@ -71,7 +72,7 @@ export async function editProjectService(projectId, payload) {
  * @returns 
  */
 export async function deleteProjectService(projectId) {
-  const absoluteUrl = buildUrl(`/dashboard/projects/${projectId}`);
+  const absoluteUrl = buildUrl(`/${API.dashboard}/${API.projects}/${projectId}`);
   const headers = setHeaders();
   const axiosParams = {
     headers
